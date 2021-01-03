@@ -16,4 +16,9 @@ module.exports = function (eleventyConfig) {
   //   permalinkSymbol: "#"
   // });
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+
+  return {
+     pathPrefix: "/kvasok/"
+  }
 };
