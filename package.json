@@ -7,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx @11ty/eleventy",
-    "deploy": "gh-pages -d _site"
+    "start": "npx @11ty/eleventy --serve",
+    "deploy": "gh-pages -d _site",
+    "clean": "rm -r _site"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,16 @@
     "gh-pages": "^3.1.0"
   },
   "dependencies": {
-    "markdown-it-anchor": "^6.0.1"
+    "@11ty/eleventy-img": "^0.7.0",
+    "@fec/eleventy-plugin-remark": "^2.1.0",
+    "@fec/remark-images": "^0.4.0-alpha",
+    "jsdom": "^16.4.0",
+    "markdown-it-anchor": "^6.0.1",
+    "remark": "^13.0.0",
+    "remark-gfm": "^1.0.0",
+    "remark-html": "^13.0.1",
+    "remark-images": "^2.0.0",
+    "remark-slug": "^6.0.0",
+    "remark-toc": "^7.0.0"
   }
 }
